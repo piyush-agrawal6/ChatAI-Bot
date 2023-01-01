@@ -30,7 +30,7 @@ body {
   gap: 10px;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  padding-bottom: 20px;
+  padding-bottom: 100px;
   scroll-behavior: smooth;
 }
 
