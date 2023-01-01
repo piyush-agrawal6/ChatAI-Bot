@@ -102,7 +102,7 @@ header {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  /* gap: 100px; */
+  gap: 10px;
 }
 .chatAi {
   width: 100%;
@@ -145,7 +145,6 @@ header {
   max-width: 100%;
   text-align: start;
   overflow-x: scroll;
-  white-space: pre-wrap;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
