@@ -22,7 +22,7 @@ Start the server
 
 # Chat AI 
 
-Chat AI is a large language model chatbot developed by using OpenAI based on text-davinci-003 API. It has a remarkable ability to interact in conversational dialogue form and provide responses that can appear surprisingly human.
+Chat AI is a large language model chatbot made by using OpenAI based on text-davinci-003 API. It has a remarkable ability to interact in conversational dialogue form and provide responses that can appear surprisingly human.
 
 <!-- <img src="https://i.ibb.co/4WkwWc2/logo.png" width="500" height="190px"> -->
 
