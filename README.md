@@ -58,7 +58,7 @@ Server - https://github.com/piyush-agrawal6/ChatAI---Backend
 
 Main page
 
-![App Screenshot](https://i.ibb.co/mrK1bry/01-01-2023-11-22-50-REC.png)
+![App Screenshot](https://i.ibb.co/RgTT1R3/01-01-2023-11-46-06-REC.png)
 
 
 ## Blog / Presentation
