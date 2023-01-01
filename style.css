@@ -7,13 +7,13 @@
   list-style: none;
 }
 body {
-  background: #343541;
+  background: #2d2e37;
 }
 
 /* navbar */
 header {
   width: 100%;
-  background-color: #2e2e34;
+  background-color: #1d1d21;
   color: white;
   display: flex;
   align-items: center;
@@ -57,7 +57,7 @@ header {
 #app {
   width: 100vw;
   height: 100vh;
-  background: #343541;
+  background: #292a31;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,7 +88,7 @@ header {
 }
 
 .ai {
-  background: #40414f;
+  background: #1e1e1e;
 }
 .user {
   background: #40414f;
@@ -161,7 +161,7 @@ form {
   max-width: 1280px;
   margin: 0 auto;
   padding: 10px;
-  background: #40414f;
+  background: #1d1d21;
   display: flex;
   align-items: center;
   flex-direction: row;
