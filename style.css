@@ -59,7 +59,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  /* gap: 100px; */
 }
 .chatAi {
   width: 100%;
@@ -95,6 +95,9 @@ body {
 .message {
   flex: 1;
   color: #dcdcdc;
+  display: flex;
+  align-items: center;
+  padding: 7px 0;
   font-size: 20px;
   max-width: 100%;
   text-align: start;

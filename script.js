@@ -51,8 +51,11 @@ function chat(isAi, value, id) {
 const handleSubmit = async (e) => {
   e.preventDefault();
   const data = new FormData(form);
-
-  //user chat
+  
+  if(!data.get("prompt").trim()){
+    alert("Please write something")
+  }else{
+      //user chat
   chatContainer.innerHTML += chat(false, data.get("prompt").trim(), Date.now());
   form.reset();
 
@@ -86,6 +89,8 @@ const handleSubmit = async (e) => {
     messageDiv.innerHTML = "Something went wrong";
     alert(err);
   }
+  }
+
 };
 
 form.addEventListener("submit", handleSubmit);
