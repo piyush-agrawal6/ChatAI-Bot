@@ -1,15 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Alegreya Sans", sans-serif;
+  list-style: none;
 }
-
 body {
   background: #343541;
 }
+
+/* navbar */
+header {
+  width: 100%;
+  background-color: #2e2e34;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 2rem;
+  position: block;
+  top: 0;
+}
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+}
+.codeImg {
+  width: 18px;
+}
+.sendImg {
+  width: 30px;
+  margin-right: 10px;
+}
+.hamburger {
+  display: none;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar ul li {
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  gap: 8px;
+}
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+/* chat */
 
 #app {
   width: 100vw;
@@ -76,14 +119,14 @@ body {
   width: 36px;
   height: 36px;
   border-radius: 5px;
-  background: #5436da;
+  background: #2362c2;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .ai .profile {
-  background: #10a37f;
+  background: #5843f3;
 }
 
 .profile img {
@@ -149,4 +192,80 @@ button {
 form img {
   width: 30px;
   height: 30px;
+}
+
+@media (max-width: 1000px) {
+  header {
+    padding: 14px 2rem;
+  }
+  .logo {
+    font-size: 22px;
+  }
+  .navbar ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 675px) {
+  header {
+    padding: 10px 2rem;
+  }
+  .sendImg {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger .line {
+    width: 22px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+  }
+  .navbar {
+    height: 0;
+    position: absolute;
+    border-top: 1px solid rgb(161, 160, 160);
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #2e2e34;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  .navbar.active {
+    height: auto;
+    transition: 0.5s;
+  }
+  .navbar ul {
+    display: block;
+    text-align: center;
+    margin: 40px auto 40px auto;
+    width: fit-content;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .navbar.active ul {
+    transition: 0.5s;
+    opacity: 1;
+  }
+  .navbar ul li {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 375px) {
+  form {
+    padding: 0px;
+  }
+  .sendImg {
+    width: 18px;
+    height: 18px;
+  }
+  header {
+    padding: 10px 2rem;
+  }
 }
